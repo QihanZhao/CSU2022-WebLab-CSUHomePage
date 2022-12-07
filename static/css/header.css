@@ -1,0 +1,15 @@
+.topFix {
+    width: 80%;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* justify-items: center; */
+}
+
+.navFix {
+    width: 80%;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: 1fr 0.8fr 1fr;
+    /* justify-items: center; */
+}
