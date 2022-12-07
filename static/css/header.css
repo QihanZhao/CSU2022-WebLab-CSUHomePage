@@ -1,16 +1,20 @@
 .topFix {
-    width: 80%;
+    width: 85%;
     margin: 0px auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* justify-items: center; */
+    grid-template-rows: 43px;
+    /* justify-items: space-evenly; */
+    align-items: end;
 }
 
 .navFix {
-    width: 80%;
+    width: 85%;
     margin: 0px auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: calc(110px - 43px);
+    align-items: center;
     /* justify-items: center; */
 }
 
@@ -35,6 +39,7 @@
     justify-items: center;
     align-items: center;
     z-index: 10;
+    color: #000;
 
 }
 
@@ -62,5 +67,28 @@
     justify-items: start;
     align-items: center;
     z-index: 10;
+    color: #000;
 
+}
+
+.topFix a {
+    text-decoration: none;
+    color: white;
+}
+
+.topFix .topL a {
+    margin-right: 25px;
+}
+
+.topFix .topR a {
+    margin-left: 25px;
+}
+
+
+.navFix .navL .dropdown {
+    margin-right: 35px;
+}
+
+.navFix .navR .dropdown {
+    margin-left: 35px;
 }

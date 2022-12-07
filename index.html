@@ -11,12 +11,12 @@
     <!-- <script type="module" src="/static/css/header.css"></script> -->
 </head>
 
-<body>
-    <div class="header">
+<body style="margin:0;">
+    <div class="header" style="position:fixed;width: 100%;height:110px; background-color: rgb(2,70,143);">
 
-        <div class="topFix">
+        <div class="topFix" style="color:white; font-size:14px;">
 
-            <div class="topL" style="justify-self:start">
+            <div class="topL" style="justify-self:start;">
                 <!-- <script language="javascript" src="/system/resource/js/openlink.js"></script> -->
                 <a href="/index.html">学生</a>
                 <a href="/index.html">教职工</a>
@@ -24,11 +24,11 @@
                 <a href="/index.html">校友校董</a>
                 <a href="/index.html">招聘</a>
             </div>
-            <div class="topR" style="justify-self:end">
+            <div class="topR" style="justify-self:end;">
                 <!-- <script language="javascript" src="/system/resource/js/openlink.js"></script> -->
                 <a href="/index.html">信息门户</a>
                 <a href="/index.html">图书馆</a>
-                <div class="dropdown">
+                <a class="dropdown">
                     教育机构
                     <div class="dropdownContent">
                         <div>文学与新闻传播学院</div>
@@ -63,36 +63,29 @@
                         <div>邓迪国际学院</div>
 
                     </div>
-                </div>
+                </a>
                 <a href="/index.html">研究机构</a>
                 <a href="/index.html">English</a>
             </div>
         </div>
 
-        <div class="navFix">
-            <div class="navL" style="justify-self:start">
-
+        <div class="navFix" style="color:white;font-size:20px;">
+            <div class="navL" style="justify-self:start;">
                 <div class="dropdown">
                     走进中南
                     <div class="dropdownContent">
-                        <!-- <a href="#">学校概况</a>
-                        <a href="#">历史沿革</a>
-                        <a href="#">学校领导</a> -->
                         <div>学校概况</div>
                         <div>历史沿革</div>
                         <div>学校领导</div>
-
                         <div>学校概况</div>
                         <div>历史沿革</div>
                         <div>学校领导</div>
                         <img src="/static/images/navpic.jpg" style="grid-area:image">
-
-
                     </div>
                 </div>
-                <a class="">教育教学</a>
-                <a class="">学院学科</a>
-                <a class="">师资队伍</a>
+                <a class="dropdown">教育教学</a>
+                <a class="dropdown">学院学科</a>
+                <a class="dropdown">师资队伍</a>
             </div>
 
             <div class="logo" style="position: absolute; top: 0; left: 50%; transform: translate(-50%, 0); ">
@@ -104,25 +97,26 @@
 
             <div class="navR" style="justify-self:end">
 
-                <a class="">科学研究</a>
-                <a class="">招生就业</a>
-                <a class="">合作交流</a>
-                <a class="">学生天地</a>
+                <a class="dropdown">科学研究</a>
+                <a class="dropdown">招生就业</a>
+                <a class="dropdown">合作交流</a>
+                <a class="dropdown">学生天地</a>
 
             </div>
         </div>
-        <div class="menu" style="position: absolute;top:40%;right:10px">
-            <ul>
-                <li class=""><a href="/index.html" target="_blank">每周会议</a></li>
-                <li class=""><a href="/index.html" target="_blank">中大信息</a></li>
-                <li class=""><a href="/index.html" target="_blank">中南邮箱</a></li>
-                <li class=""><a href="/index.html" target="_blank">信息门户</a></li>
-                <li class=""><a href="/index.html" target="_blank">UP</a></li>
-            </ul>
-        </div>
     </div>
 
-    <div class="banner">
+    <div class="menu" style="position:absolute;top:40%;right:10px">
+        <ul>
+            <li class=""><a href="/index.html" target="_blank">每周会议</a></li>
+            <li class=""><a href="/index.html" target="_blank">中大信息</a></li>
+            <li class=""><a href="/index.html" target="_blank">中南邮箱</a></li>
+            <li class=""><a href="/index.html" target="_blank">信息门户</a></li>
+            <li class=""><a href="/index.html" target="_blank">UP</a></li>
+        </ul>
+    </div>
+
+    <div class="banner" style="padding-top: 110px;">
         轮播图1
     </div>
 
