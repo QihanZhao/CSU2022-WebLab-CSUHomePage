@@ -6,15 +6,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>中南大学</title>
+    <style>
+        .dropdownContent {
+            display: grid;
+            /* 2fr 2fr 2fr 3fr */
+            grid-template-columns: [c1] 100px [c2] 100px [c3] 100px [c4] 100px [c5];
+            grid-template-rows: 1fr 1fr;
+            /* grid-template-areas: "l1 l2 l3 r" "b1 b2 b3 r"; */
+
+        }
+    </style>
 </head>
 
 <body>
 
-    <div class="topFix">
 
-        <div class="topL">hello</div>
-        <div class="topR">wo</div>
+
+    <div class="dropdownContent">
+
+        <div>学校概况</div>
+        <div>历史沿革</div>
+        <div style="grid-column-start:3;grid-column-end:5">学校领导学校领导学校领导学校领导学校领导</div>
+        <!-- <div><img src="/static/images/navpic.jpg"></div> -->
+
+        <div>学校概况</div>
+        <div>历史沿革</div>
+        <div>学校领导</div>
+
+        <!-- <div>学校概况</div>
+        <div>历史沿革</div>
+        <div>学校领导</div>
+        <div style="grid-area:r ;"><img src="/static/images/navpic.jpg"></div>
+
+        <div>学校概况</div>
+        <div>历史沿革</div>
+        <div>学校领导</div> -->
     </div>
+
 
 
     <script type="module" src="/static/css/header.css"></script>
