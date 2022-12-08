@@ -4,7 +4,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 43px;
-    /* justify-items: space-evenly; */
+    /* justify-items: space-between; */
     align-items: end;
 }
 
@@ -21,6 +21,7 @@
 .navFix .dropdown {
     position: relative;
     display: inline-block;
+    cursor: pointer;
 }
 
 .navFix .dropdownContent {
@@ -46,6 +47,7 @@
 .topFix .dropdown {
     position: relative;
     display: inline-block;
+    cursor: pointer;
 }
 
 .topFix .dropdownContent {
