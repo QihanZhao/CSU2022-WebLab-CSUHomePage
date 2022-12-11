@@ -1,3 +1,7 @@
+.header {
+    z-index: 5;
+}
+
 .topFix {
     width: 85%;
     margin: 0px auto;
