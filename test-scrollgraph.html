@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中南大学</title>
+    <style>
+        @keyframes slideshow {
+            0% {
+                left: 0;
+            }
+
+            100% {
+                left: -720px;
+            }
+
+        }
+
+        .slide {
+            width: 220px;
+            height: 120px;
+            border: 2px black dashed;
+            /* z-index: 20; */
+            position: relative;
+            overflow: hidden;
+
+            display: grid;
+            align-items: center;
+        }
+
+        .images {
+            position: absolute;
+            display: grid;
+            grid-template-columns: repeat(8, 100px);
+
+            column-gap: 20px;
+            animation: slideshow 10s linear infinite;
+        }
+
+        .images:hover {
+            animation-play-state: paused;
+        }
+
+        .img {
+            box-sizing: border-box;
+            width: 100px;
+            height: 100px;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="slide">
+        <div class="images" style="color: blue;">
+            <div class="img" style="background-image:url('/static/images/round1.jpg');">.</div>
+            <div class="img" style="background-image:url('/static/images/round2.jpg');">.</div>
+            <div class="img" style="background-image:url('/static/images/round3.jpg');">.</div>
+            <div class="img" style="background-image:url('/static/images/round4.jpg');">.</div>
+            <div class="img" style="background-image:url('/static/images/round5.jpg');">.</div>
+            <div class="img" style="background-image:url('/static/images/round6.jpg');">.</div>
+            <div class="img" style="background-image:url('/static/images/round1.jpg');">.</div>
+            <div class="img" style="background-image:url('/static/images/round2.jpg');">.</div>
+        </div>
+    </div>
+
+</body>
+
+</html>
