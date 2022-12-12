@@ -9,7 +9,9 @@
 
     <link rel="stylesheet" type="text/css" href="/static/css/header.css">
     <link rel="stylesheet" type="text/css" href="/static/css/carousel.css">
-    <!-- <script type="module" src="/static/css/header.css"></script> -->
+    <link rel="stylesheet" type="text/css" href="/static/css/search.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/scroll.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/menu.css">
 </head>
 
 <body style="margin:0;">
@@ -18,7 +20,6 @@
         <div class="topFix" style="color:white; font-size:14px;">
 
             <div class="topL" style="justify-self:start;">
-                <!-- <script language="javascript" src="/system/resource/js/openlink.js"></script> -->
                 <a href="/index.html">学生</a>
                 <a href="/index.html">教职工</a>
                 <a href="/index.html">未来学生</a>
@@ -26,7 +27,6 @@
                 <a href="/index.html">招聘</a>
             </div>
             <div class="topR" style="justify-self:end;">
-                <!-- <script language="javascript" src="/system/resource/js/openlink.js"></script> -->
                 <a href="/index.html">信息门户</a>
                 <a href="/index.html">图书馆</a>
                 <a class="dropdown">
@@ -92,7 +92,6 @@
             <div class="logo" style="position: absolute; top: 0; left: 50%; transform: translate(-50%, 0); ">
                 <a href="/index.html">
                     <img src="/static/images/logo.png" alt="">
-                    <!-- <img src="/static/images/logo.png" alt=""> -->
                 </a>
             </div>
 
@@ -107,14 +106,42 @@
         </div>
     </div>
 
-    <div class="menu" style="position:fixed;top:40%;right:10px">
-        <ul>
-            <li class=""><a href="/index.html" target="_blank">每周会议</a></li>
-            <li class=""><a href="/index.html" target="_blank">中大信息</a></li>
-            <li class=""><a href="/index.html" target="_blank">中南邮箱</a></li>
-            <li class=""><a href="/index.html" target="_blank">信息门户</a></li>
-            <li class=""><a href="/index.html" target="_blank">UP</a></li>
-        </ul>
+    <div class="menu" style="position:fixed;top:30%;right:-120px;z-index:100;">
+
+        <a href="/index.html" class="short" target="_blank">
+            <img src="/static/images/menu1.png" alt="">
+            <p>校内通知</p>
+        </a>
+        <a href="/index.html" class="short" target="_blank">
+            <img src="/static/images/menu2.png" alt="">
+            <p>校内公文</p>
+        </a>
+        <a href="/index.html" class="short" target="_blank">
+            <img src="/static/images/menu3.png" alt="">
+            <p>每周会议</p>
+        </a>
+        <a href="/index.html" class="short" target="_blank">
+            <img src="/static/images/menu4.png" alt="">
+            <p>中大信息</p>
+        </a>
+        <a href="/index.html" class="short" target="_blank">
+            <img src="/static/images/menu5.png" alt="">
+            <p>中南邮箱</p>
+        </a>
+        <a href="/index.html" class="short" target="_blank">
+            <img src="/static/images/menu6.png" alt="">
+            <p>信息门户</p>
+        </a>
+        <a href="/index.html" class="short" target="_blank">
+            <img src="/static/images/menu7.png" alt="">
+            <p>办事大厅</p>
+        </a>
+        <div class="buttonToLeft" style="position:relative;right:0px;"><img src="/static/images/menuLeft.png" alt="">
+        </div>
+        <div class="buttonToRight" hidden style="position:relative;right:30px;"><img src="/static/images/menuRight.png">
+        </div>
+
+
     </div>
 
     <div class="banner" style="margin-top: 110px;">
@@ -134,21 +161,35 @@
         </div>
     </div>
 
-    <div class="main">
+    <div class="main" style="display:grid; justify-items:center;">
+        <form class="search" action="?">
+            <input type="text" placeholder="你好啊，xxx，想检索什么内容吗？" name="searchKey">
+            <button type="submit">🔍</button>
+        </form>
 
-        <div class="search">
-            <form action="?">
-                <input type="text" placeholder="你好啊，xxx，想检索什么内容吗？" name="search">
-                <button type="submit">?</button>
-            </form>
+        <div class="scroll">
+            <div class="images" style="color: blue;">
+                <div class="img" style="background-image:url('/static/images/round1.jpg');">.</div>
+                <div class="img" style="background-image:url('/static/images/round2.jpg');">.</div>
+                <div class="img" style="background-image:url('/static/images/round3.jpg');">.</div>
+                <div class="img" style="background-image:url('/static/images/round4.jpg');">.</div>
+                <div class="img" style="background-image:url('/static/images/round5.jpg');">.</div>
+                <div class="img" style="background-image:url('/static/images/round6.jpg');">.</div>
+                <div class="img" style="background-image:url('/static/images/round1.jpg');">.</div>
+                <div class="img" style="background-image:url('/static/images/round2.jpg');">.</div>
+                <div class="img" style="background-image:url('/static/images/round3.jpg');">.</div>
+                <div class="img" style="background-image:url('/static/images/round4.jpg');">.</div>
+                <div class="img" style="background-image:url('/static/images/round5.jpg');">.</div>
+                <div class="img" style="background-image:url('/static/images/round6.jpg');">.</div>
+            </div>
         </div>
-        <div>轮播图2</div>
-
     </div>
+
     <div class="fotter"></div>
 
 
     <script src="/static/script/carousel.js"></script>
+    <script src="/static/script/menu.js"></script>
 </body>
 
 </html>
