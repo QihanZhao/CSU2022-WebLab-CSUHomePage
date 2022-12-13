@@ -57,7 +57,7 @@ buttonToLeft.addEventListener('click', () => {
         //     }
         //     items[i].style.right = (80 / 500) * timePassed + 'px'
 
-        // V2 requestAnimationFrame(animate);
+        // V2 requestAnimationFrame
         // animate({
         //     duration: 1000,
         //     timing(timeFraction) {
